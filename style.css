@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(233, 190, 197);
+    background-color: rgb(226, 225, 225);
 }
 
 .top-nav {
@@ -16,6 +16,10 @@ body {
      align-items: center;
      color: white;
      justify-content: space-evenly;
+     position:fixed;
+     top:0;
+     width: 100%;
+     z-index: 5;
 }
 
 
@@ -194,8 +198,302 @@ body {
     padding: 2px;
 }
 
+/*** ....bottom nav......******/
+
+.bottom-nav {
+    background-color: #232f3e;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 20px;
+    width: 100%;
+    position:relative;
+    top:60px;
+}
+
+.bnav-left {
+    display:flex;
+    align-items: center;
+}
+
+.bnav-left .all {
+    display:flex;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bnav-left .all p {
+    font-size: 1vw;
+    padding-left: 5px;
+}
+
+.bnav-left .all i {
+    font-size: 1.5vw;
+    margin-right: 5px;
+}
+
+.bnav-left .all:hover {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.bnav-left .options {
+    display: flex;
+}
+
+.bnav-left .options a{
+   text-decoration: none;
+   font-size: 1.1vw;
+   padding: 8px 10px;
+   color: white;
+   border: 1px solid transparent;
+}
+
+.bnav-left .options a:hover {
+    border: 1px solid white;
+}
+ 
+.bnav-right {
+    font-size: 1.2vw;
+    font-weight: 700;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+.bnav-right:hover {
+    border: 1px solid white;
+    padding: 5px;
+    cursor:pointer;
+}
+
+/*..........Hero section.......*/
+
+.hero-section {
+    background-image: url("images/amazon-coverpic.jpg");
+    height: 330px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+/*.............. products...........*/
+
+.product-box {
+    width: 96%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+} 
+
+.product-box .box {
+    background-color: white;
+    height: auto;
+    padding: 20px;
+}
+
+.product-box .box img {
+    width: 100%;
+}
+
+.product-box .box h3 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.product-box .box a {
+    margin-top: 20px;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+/*..........Scroll product section.........*/
+
+.scroll-products {
+    width: 96%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.scroll-products .products {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: auto;
+  
+}
+
+.scroll-products .products img {
+    width: 200px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.scroll-products .products::-webkit-scrollbar {
+    height: 8px;
+    cursor:pointer;
+  
+}
+
+.scroll-products .products::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.scroll-products .products::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.scroll-products .products::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: grey;
+}
+
+/** ...........flight section......*/
+ .flight-offer {
+    background-color: white;
+    width: 96%;
+    margin:20px auto;
+    padding: 20px;
+ }
+
+ .flight-offer img {
+    width: 100%;
+    height: 400px;
+ }
+
+ /**...............signin-section.....*/
+ .signin-section {
+    width: 100%;
+    background-color: white;
+    margin: 20px 0;
+    padding: 30px 0;
+ }
+
+ .signin-section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 30px 0;
+ }
+
+ .signin-section .content p {
+    font-size: 1vw;
+    margin-bottom:5px;;
+    margin-top: 5px;
+}
 
 
+.signin-section .content button {
+    padding: 12px;
+    background:rgb(192, 135, 28);
+ 
+    border: 0;
+    outline:none;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.signin-section .content a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: blue;
+}
+
+/** ............footer section*****/
+
+.footer {
+    width: 100%;
+    background: #131921;
+    color: white;
+}
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .row .col {
+    margin-top: 20px;
+  padding: 20px;
+}
+
+.footer .row .col .col-heading h3 {
+   color: white;
+   padding-bottom: 8px;
+}
+
+.footer .row .col ul li {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+
+.footer .row .col ul li a {
+    text-decoration: none;
+    color: rgb(212, 203, 203);
+}
+
+.footer .row .col ul li a:hover {
+    text-decoration: underline;
+}
+
+.bottom-footer .footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.bottom-footer .footer-icon img {
+    width: 100px;
+}
+
+.bottom-footer .footer-icon button {
+    padding: 6px 25px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+.bottom-footer {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+    
+}
+
+
+.bottom-footer .country ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.bottom-footer .country ul li {
+    list-style-type: none;
+    margin: 5px 12px;
+}
+
+
+hr {
+    border: 0.5px solid #2e2e2c;
+}
 
 
 
